@@ -1,0 +1,54 @@
+.paper{
+	font-family: Arial;
+	height: 450px;
+	width: 250px;
+	padding-top: 10px;
+	background-image: url('paper.png');
+	float: left;
+}
+#letsGo{
+	margin-left: 70px;
+	margin-top: 8px; 
+	width: 112px;
+}
+#selectTodo{
+	width: 100px;
+	margin-left: 70px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#addTaskBtn{
+	width: 100px !important;
+	margin-top: 20px;
+	margin-left: 70px;
+}
+form{
+	margin-left: 5px;
+}
+
+.todoList{
+	height: 415px;
+	width: 400px;
+	padding-top: 99px;
+	margin-left: 10px;
+	background-image: url('list.jpeg');
+	background-size: contain;
+	border-radius: 10px;
+	border: 1px solid grey;
+	float: left;
+}
+.todoList table{
+	font-size: 18px;
+	margin-left: 30px;
+	width: 300px;
+	text-align: center;
+}
+table td{
+	margin-top: 50px;
+	height: 16px;
+	font-size: 14px;
+}
+table button{
+	height: 15px;
+	font-size: 10px;
+}

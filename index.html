@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="list.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="paper">
+	<h2 style="text-align: center">to do List</h2>
+<button id="letsGo" style="">lets Start</button>
+	<hr>
+	<form>
+		<input type="hidden" name="id" id="id">
+		<!-- <label for="task">New task: </label> -->
+		<input name="newTask" id="newTask" class="form-input" style="text-align: center; width: 230px" placeholder="Your new task" />
+		<!-- <select name="selectTodo" id="selectTodo">
+			<option selected value="todo">todo</option>
+			<option value="done">done</option>
+		</select> -->
+		<button id="addTaskBtn" disabled="disabled">save</button>
+		<hr>
+	</form>
+</div>
+
+<div class="todoList">
+	<table >
+		<thead>
+			<tr style="width: 250px">
+				<th width="230px">need to do:</th>
+				<th width="60px">edit</th>
+				<th width="60px">delete</th>
+			</tr>
+		</thead>
+		<tbody >
+			
+		</tbody>
+	</table>
+</div>
+
+<script type="text/appTemplate" id="todoListTemplate">
+
+	<tr data-id="{{id}}" style="height: 15px">
+		<td>{{newTask}}</td>
+		<td>
+		<button class="edit-btn">Edit</button>
+		</td>
+		<td>
+		<button class="delete-btn">Del</button>
+		</td>
+	</tr>
+
+</script>
+
+</body>
+</html>
